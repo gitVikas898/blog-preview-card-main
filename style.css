@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Fig Tree"; /* Your custom font name */
+    src: url("/assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("ttf"),  /* Modern web font format */
+         url("/assets/fonts/Figtree-VariableFont_wght.ttf") format("ttf"),
+         url("/assets/fonts/static/Figtree-SemiBold.ttf") format("ttf"),
+         url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("ttf"),
+         ;   /* Older web font format */
+    font-weight: normal; /* Optional: specify weight */
+    font-style: normal;  /* Optional: specify style */
+}
+:root{
+    /* Basic Colors */
+
+    --clr-Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --clr-Gray-500: hsl(0, 0%, 42%);
+    --clr-Gray-950: hsl(0, 0%, 7%); 
+
+    /* Font Sizes */
+
+    --fs-init:1rem;
+    --fs-ok:1.5rem;
+    --fs-med:2rem;
+    --fs-big:2.5rem;
+
+    /* font weight */
+
+    --fw-light:400;
+    --fw-semi-bold:500;
+    --fw-bold:700;
+    --fw-black:900;
+
+    /* Padding */
+
+    --padding-init:1.5rem;
+    --padding-ok:2rem;
+    --padding-med:2.5rem;
+
+    /* Margin */
+
+    --margin-init:1.5rem;
+    --margin-ok:2rem;
+    --margin-more:2.5rem;
+
+    /* Border Radius */
+
+    --br-init:0.5rem;
+    --br-ok:1rem;
+    --br-med:1.5em;
+
+    --br-circle:50%;
+}
