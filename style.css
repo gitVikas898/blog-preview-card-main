@@ -27,7 +27,7 @@
 
     --fw-light:400;
     --fw-semi-bold:500;
-    --fw-bold:700;
+    --fw-bold:800;
     --fw-black:900;
 
     /* Padding */
@@ -43,10 +43,84 @@
     --margin-more:2.5rem;
 
     /* Border Radius */
-
+    --br-very-small:0.2rem;
     --br-init:0.5rem;
     --br-ok:1rem;
     --br-med:1.5em;
 
     --br-circle:50%;
+
+    /* Gaps */
+    --gap-init:1rem;
+    --gap-ok:1.5rem;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Figtree";
+
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-Yellow);
+}
+
+/* Conatiner Styles */
+.container{
+    border: 1.4px solid;
+    max-width: 400px;
+    padding: var(--padding-init);
+    display: grid;
+    gap: var(--gap-init);
+    margin-inline:var(--margin-init) ;
+    background-color: var(--White);
+    border-radius: var(--br-ok);
+    box-shadow: 10px 9px 0px rgba(0, 0, 0);
+}
+/* Image Styles */
+img{
+    border-radius: var(--br-init);
+    width: 100%;
+    object-fit: cover;
+}
+.profile-pic{
+    width: 30px;
+}
+/* Text Styles */
+p,h1{
+    margin: 0;
+}
+.learning{
+    padding: .2rem .8rem;
+    background-color: var(--clr-Yellow);
+    max-width: fit-content;
+    border-radius: var(--br-very-small);
+    font-weight: var(--fw-bold);
+}
+.text{
+    font-weight: var(--fw-semi-bol);
+    font-weight: var(--fw-semi-bold);
+}
+.heading{
+    font-weight: var(--fw-black);
+}
+.main-text{
+    color: var(--clr-Gray-500);
+    line-height: 1.5rem;
+}
+/* Profile-section */
+.flex-flow{
+    display: flex;
+    align-items: center;
+}
+.name{
+    color: var(--clr-Gray-950);
+    font-weight: var(--fw-bold);
+    margin-left: 1rem;
+}
+.heading:hover{
+    color: var(--clr-Yellow);
+    cursor: pointer;
 }
